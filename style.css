@@ -1,0 +1,371 @@
+/* navbar  */
+
+/* Top bar styling */
+.top-bar {
+  background-color: #2a8d94;
+  color: white;
+  font-size: 14px;
+  padding: 10px 0; /* Increased height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* higher than navbar */
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: white;
+  margin-top: -3px;
+}
+
+.top-bar .social-icons1 a {
+  margin-right: 10px; /* Reduced spacing between icons */
+  font-size: 14px;
+}
+
+/* Fix phone icon */
+/* .top-bar .phone i {
+  transform: rotate(0deg); } */
+
+/* Navbar styling */
+
+.navbar {
+  position: fixed;
+  top: 40px; /* top-bar ki height ke baad */
+  left: 0;
+  width: 100%;
+  z-index: 1020;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* optional */
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  color: black;
+}
+.logo-img {
+  max-height: 40px;
+  width: auto;
+  margin-left: -34px;
+}
+.navbar .fa-search {
+  color: #2a8d94;
+}
+.no-underline {
+  text-decoration: none;
+  font-size: large;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-bar .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+  }
+
+  .d-flex.align-items-center {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+/* Featured products */
+
+.card {
+  background-color: #f8f9fa; /* Light gray */
+  padding: 10px;
+  height: 100%;
+  max-width: 200px;
+  margin: 5px auto; /* Reduced margin between cards */
+  border: none; /* Ensure no border */
+  box-shadow: none; /* Remove any default shadow */
+}
+
+.card-img-top {
+  padding: 10px;
+  object-fit: contain;
+  height: 160px;
+  width: 100%;
+}
+.card-text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  word-wrap: break-word;
+  text-align: left; /* Ensures wrapped lines align to the start */
+}
+
+/*trading  */
+.product-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  border: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-content {
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+  align-items: center;
+}
+
+.card-content img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.product-text h5 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.product-text p {
+  margin: 5px 0 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: center; /* Center the group */
+  width: 100%;
+}
+
+.product-buttons a {
+  flex: 1; /* Each button takes equal width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px 0; /* reduce horizontal padding */
+  background-color: #00838f;
+  border-top: 1px solid #006f7a;
+  border-right: 1px solid #006f7a;
+}
+
+.product-buttons a:last-child {
+  border-right: none;
+}
+
+.product-buttons a:not(:last-child) {
+  border-right: 1px solid #006f7a;
+}
+
+@media (max-width: 576px) {
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+  }
+
+  .product-buttons a {
+    border-right: none !important;
+    border-bottom: 1px solid #006f7a;
+  }
+
+  .product-buttons a:last-child {
+    border-bottom: none;
+  }
+}
+/* suggested  */
+
+
+body {
+  background-color: #f9f9f9;
+}
+.product-card {
+  border: 1px solid #00838f;
+  padding: 15px;
+  background-color: white;
+  height: 223px;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+.product-card h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00838f;
+}
+.product-card p {
+  font-size: 14px;
+  color: #333;
+}
+.btn-view,
+.btn-catalog {
+  background-color: #00838f;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 0;
+}
+.btn-view:hover,
+.btn-catalog:hover {
+  background-color: #006666;
+}
+.btn-container {
+  display: flex;
+  gap: 0;
+  justify-content: space-between;
+  margin: 0;
+  width: 165px;
+  margin-top: 23px;
+}
+.btn-container1 {
+  display: flex;
+  gap: 0;
+  justify-content: space-between;
+  margin-left: 96px;
+  width: 110px;
+}
+.small-card {
+  padding: 10px 0;
+  font-size: 12px;
+}
+.small-card img {
+  max-height: 100px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.small-card h5 {
+  font-size: 14px;
+}
+.small-card p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.btn-view {
+  background-color: #00838f;
+  color: white;
+  border: none;
+  width: 50%; /* Equal width for both buttons */
+  border-radius: 0;
+  position: relative;
+}
+
+.btn-catalog {
+  background-color: #00838f;
+  color: white;
+  border: none;
+  width: 50%; /* Equal width for both buttons */
+  border-radius: 0;
+}
+
+.btn-view:hover,
+.btn-catalog:hover {
+  background-color: #006666;
+}
+
+.btn-view::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: white; /* The vertical white line */
+}
+/* Footer */
+
+.footer {
+  background-color: #0a0b18;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #b0b0b0;
+}
+.footer a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #0a0b18;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.social-icons a:hover {
+  background-color: #00838f;
+  color: #ffffff;
+}
+.news-image {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.news-item {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.news-item img {
+  display: block;
+}
+.news-item a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.news-item a:hover {
+  color: #00838f;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer ul li {
+  margin-bottom: 8px;
+}
